@@ -24,9 +24,9 @@
 <body>
     <!-- Header -->
     <header class="cabecera">
-        <!-- icono pizarron verde 
-        <img id="top" src="./media/PizarronVerde.jpg" alt="Logo">
-        -->
+        <!-- icono pizarron verde -->
+        <img id="top" src="./media/pizarronverde.jpg" alt="Logo">
+
         <!-- Menu de paginas -->
         <nav class="navbar">
             <ul>
@@ -38,7 +38,7 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <hr />
+
     </header>
     <!-- **************** Fin de Header *******************-->
     <main>
@@ -53,103 +53,98 @@
                 <p>
                     Aprendiendo cuando gustes donde quieras.
                 </p>
-
-                <!-- ***************************************** -->
-                <!-- boton de busqueda MEJORAR-->
-                <input class="explorar" type="search" id="site-search" name="q">
-                <!-- ***************************************** -->
-
+                <input class="botonexplorar" type="search" id="site-search" name="q" placeholder="Explorar">
             </div>
-            <!-- imagen que acompaña encabezado de presentacion-->
             <div class="derecha">
                 <img src="./media/pizarron_formulas_sinfondo.png" alt="pizarron_formulas_sinfondo">
             </div>
         </section>
-        <hr>
-        <!-- *********************************************************** -->
-        <!-- Beneficios para los usuarios de la página -->
-        <section class="beneficios">
 
-            <div>
+        <!-- ***************** FIN BANER ********************* -->
+        <!-- ******** INICIO BENEFICIOS ******************** -->
+        <section class="beneficios">
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Ejercicios Resuesltos
-                    <p class="destacado2">
+                    <p class="destacado">
                         Encontraras la resolucion de diversos tipos de ejercicios con el detalle de su resolucion.
                     </p>
                 </div>
+
             </div>
-            <div>
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Teoría
-                    <p class="destacado2">
+                    <p class="destacado">
                         Descubre el desarrollo teorico de los temas que estas buscando. De donde vienen las fórmulas mas
                         usadas.
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Usando Aplicaciones
-                    <p class="destacado2">
+                    <p class="destacado">
                         Te mostramos como resolver problemas utlizando software como Geogebra, Maxima, Python, y otros.
                     </p>
                 </div>
             </div>
 
-            <div>
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Video y más
-                    <p class="destacado2">
+                    <p class="destacado">
                         Ve clases grabadas o simplemente pequenas pildoras de aprendizaje. Descarga el contenidos en
                         pdf.
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Diversión
-                    <p class="destacado2">
+                    <p class="destacado">
                         Diviertete resolviendo acertijos y problemas simples de logica.
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="bloque">
                 <img src="./media/imagen.png" alt="">
                 <div class="bullet">
                     Exámenes
-                    <p class="destacado2">
+                    <p class="destacado">
                         Aprende paso a paso como resolver ejercicios de examenes.
                     </p>
                 </div>
             </div>
 
         </section>
-        <hr>
-        <!-- ****************************************************** -->
-        <!-- Imagenes pizarrones y propaganda de actividades que hacen a la pagina-->
+
+        <!-- ******************** FIN BENEFICIOS ****************************** -->
+        <!-- ***************** INICIO SECCION PROPAGANDA ********************** -->
         <section class="propaganda">
             <!-- propaganda 1 -->
-            <div>
-                <img src="./media/imagen3.png" alt="">
+            <img class="item_propaganda" src="./media/imagen3.png" alt="">
+            <div class="item_propaganda">
+
                 <div class="bullet">
                     Primary benefit showcase
-                    <p class="destacado2">
+                    <p class="destacado">
                         Show how your product's features matter, how they set you apart from the competition, and how
                         you can transform your customer's experience at work or at home.
                     </p>
                 </div>
             </div>
             <!-- propaganda 2 -->
-            <div>
-                <img src="./media/imagen2.png" alt="">
+            <img class="item_propaganda" src="./media/imagen2.png" alt="">
+            <div class="item_propaganda">
                 <div class="bullet">
                     Secondary benefit showcase
-                    <p class="destacado2">
+                    <p class="destacado">
                         Help your customer imagine how life will be like when using your product. Paint a picture of the
                         practical, emotional, or psychological benefits of purchasing.
                     </p>
@@ -157,15 +152,16 @@
             </div>
 
         </section>
-        <hr>
-        <!-- ****************************************************** -->
+        <!-- ********************* FIN PROPAGANDA ****************************** -->
+        <!-- **************** INICIO SECCION COMENTARIOS *********************** -->
         <section class="likes">
 
             <!-- Que dicen de nosotros -->
             <h2>Que dicen de nosotros?</h2>
             <!-- texto -->
-            <p></p>
-            Reprehenderit nemo quod tempore doloribus ratione distinctio quis quidem vitae sunt reiciendi
+            <p>
+                Dejanos tus comentarios en nuestras redes, o mediante la sección de contacto. Con ustedes seguimos
+                mejorando y priorizando sus necesidades.
             </p>
             <!-- prit de comentarios de usuarios en redes sociales sobre el contenido ofrecido -->
             <ul>
@@ -173,10 +169,10 @@
                 <li><img src="./media/comentario2.png" alt=""></li>
                 <li><img src="./media/comentario3.png" alt=""></li>
             </ul>
-
         </section>
-        <hr>
-        <!-- ****************************************************** -->
+
+        <!-- ******************* FIN COMENTARIOS *************************** -->
+        <!-- **************** INICIO SECCION DONACIONES *********************** -->
         <section class="donaciones">
             <!-- DONACIONES -->
             <h2>Tu donación nos impulsa!</h2>
@@ -192,23 +188,27 @@
                 formas de hecerlo.
             </p>
 
-            <ul class="mp">
-                <li>PayPal</li>
-                <li>MercadoPago</li>
-                <li>Transferencia Bancaria</li>
+            <ul class="medios_de_pago">
+                <li>
+                    PayPal
+                </li>
+                <li>
+                    MercadoPago
+                </li>
+                <li>
+                    Transferencia Bancaria
+                </li>
             </ul>
         </section>
-        <hr>
-        <!-- ****************************************************** -->
-        <!-- CONTACTO -->
-        <h2>Contacto</h2>
-        <!-- texto indicativo -->
-        <p>
-            Si queres hacernos alguna consulta, sugerencia o cualquier comentario puedes contactarte con nosotros.
-        </p>
 
-        <!-- FORMULARIO DE CONTACTO -->
+        <!-- ******************* FIN DONACIONES *************************** -->
+        <!-- **************** INICIO SECCION CONTACTO *********************** -->
         <section class="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Si queres hacernos alguna consulta, sugerencia o cualquier comentario puedes contactarte con nosotros.
+            </p>
+
             <form action="#">
                 <div>
 
@@ -225,47 +225,54 @@
                 </div>
             </form>
         </section>
-        <hr>
+
     </main>
+    <!-- ******************* FIN CONTACTO *************************** -->
 
     <!-- ****************** FIN MAIN ******************************** -->
     <!-- *******************  FOOTER ************************* -->
 
     <footer class="footer">
-
-
-
-
         <!-- Redes sociales -->
-        <div class="social_1">
-            <p> Siguenos
-                <!--YOUTUBE -->
-                <a href="https://www.youtube.com/@PizarronVerde" target="_blank">
-                    <img class="logo_social" src="./media/icono_youtube_verde.png" alt="youtube" />
-                </a>
-                <!-- INSTAGRAM -->
-                <a href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
-                    <img class="logo_social" src="./media/icono_instagram_verde.png" alt="instagram">
-                </a>
-                <!-- TIKTOK -->
-                <a href="https://www.tiktok.com/@pizarronverde" target="_blank">
-                    <img class="logo_social" src="./media/icono_tiktok_verde.png" alt="tiktok">
+        <div class="social">
+            <p > Siguenos </p>
+            <!--YOUTUBE -->
+            <a  href="https://www.youtube.com/@PizarronVerde" target="_blank">
+                <img class="logo_social" src="./media/icono_youtube_verde.png" alt="youtube" />
+            </a>
+            <!-- INSTAGRAM -->
+            <a  href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
+                <img class="logo_social" src="./media/icono_instagram_verde.png" alt="instagram">
+            </a>
+            <!-- TIKTOK -->
+                
+            <a  href="https://www.tiktok.com/@pizarronverde" target="_blank">
+                <img class="logo_social" src="./media/icono_tiktok_verde.png" alt="tiktok">
 
-                </a>
-
-                <i>
-                    <ion-icon name="logo-youtube"></ion-icon>
-                </i>
-
-                <div class="suscribete-al-newsletter">
-                    <label for="newsletter">Suscribete al Newsletter:</label>
-                    <input type="newsletter" name="" id="newsletter" placeholder="Email">
-                </div>
-            </p>
-
+            </a>
         </div>
-        <div>pizarronverde © 2023.</div>
-        <div>Autor: Tamara E. Faya</div>
+
+        <div class="suscribete-al-newsletter">
+            <label for="newsletter">Suscribete al Newsletter:</label>
+            <input type="newsletter" name="" id="newsletter" placeholder="Email">
+        </div>
+
+        <nav class="menu2">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/temas.html">Temas</a></li>
+                <li><a href="./pages/juegos.html">Juegos</a></li>
+                <li><a href="./pages/donaciones.html">Donaciones</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="author">
+            <p>pizarronverde © 2023.</p>
+            <p>Autor: Tamara E. Faya</p>
+        </div>
+        
     </footer>
 
 </body>
