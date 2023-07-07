@@ -41,7 +41,7 @@ body {
 }
 
 /*****  CONTENEDOR DEL MENU *****/
-nav.navbar ul {
+nav.menu_ppal ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -49,16 +49,16 @@ nav.navbar ul {
 }
 
 /***** ELEMENTOS DE LA LISTA DEL MENU *******/
-.navbar ul li {
+.menu_ppal ul li {
     /*display: inline-block;*/
     padding: 10px;    
 }
-.navbar ul li:hover {
+.menu_ppal ul li:hover {
     background-color: var(--color-contraste);
     border-radius: 15px;
 }
 
-.navbar ul li a {
+.menu_ppal ul li a {
     text-decoration: none;
     color: var(--color-principal);
     font-weight: bold;
