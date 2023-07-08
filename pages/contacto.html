@@ -18,6 +18,8 @@
     <!-- icono en la pestaña -->
     <link rel="shortcut icon" href="../media/favicon.png">
 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -44,38 +46,37 @@
         </nav>
     </header>
     <!-- **************** Fin de Header *******************-->
-    <main>
-        
-        
-    
-        
+    <main class="container">
         <!-- FORMULARIO DE CONTACTO -->
-        <section class="form-container">
+        <section>
             <h1>Contacto</h1>
 
             <!-- texto indicativo -->
             <p>
                 Nos encantas tus preguntas y tu feedback - siempre estamos dispuestos a ayudarte !
             </p>
-            
+
             <h3>Envianos un mensaje</h3>
 
-            <form action="#">
-                <div>
+            <div class="form_contenedor">
+                <form>
                     <label for="nombre">Nombre Completo:</label>
-                    <input type="text" name="" id="nombre" placeholder="ingresar nombre">
+                    <input type="text" name="" id="nombre" placeholder="Ingresa tu nombre">
 
                     <label for="email">Mail:</label>
-                    <input type="email" name="" id="email" placeholder="mail@mail">
-                </div>
-                <div>
+                    <input type="email" name="" id="email" placeholder="Ingresa tu correo">
+
                     <label for="mensaje">Su mensaje</label>
                     <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+
+                    <div class="d-grid gap-2 col-2 mx-auto">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+
         </section>
 
     </main>
@@ -83,20 +84,20 @@
 
     <!-- *******************  FOOTER ************************* -->
 
-    <footer class="footer">
+    <footer class="footer_mine">
         <!-- Redes sociales -->
         <div class="social">
-            <p > Siguenos </p>
+            <p> Siguenos </p>
             <!--YOUTUBE -->
-            <a  href="https://www.youtube.com/@PizarronVerde" target="_blank">
+            <a href="https://www.youtube.com/@PizarronVerde" target="_blank">
                 <i class="fa-brands fa-youtube fa-2xl" style="color: #274e2a;"></i>
             </a>
             <!-- INSTAGRAM -->
-            <a  href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
+            <a href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
                 <i class="fa-brands fa-instagram fa-2xl" style="color: #274e2e;"></i>
             </a>
             <!-- TIKTOK -->
-            <a  href="https://www.tiktok.com/@pizarronverde" target="_blank">
+            <a href="https://www.tiktok.com/@pizarronverde" target="_blank">
                 <i class="fa-brands fa-tiktok fa-2xl" style="color: #274e2e;"></i>
             </a>
         </div>
@@ -116,12 +117,12 @@
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        
+
         <div class="author">
             <p>pizarronverde © 2023.</p>
             <p>Autor: Tamara E. Faya</p>
         </div>
-        
+
     </footer>
 
 
