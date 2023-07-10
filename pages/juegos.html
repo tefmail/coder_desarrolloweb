@@ -17,6 +17,8 @@
     <!-- icono en la pestaña -->
     <link rel="shortcut icon" href="./media/favicon.png">
 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -32,6 +34,11 @@
 
         <!-- Menu de paginas -->
         <nav class="menu_ppal">
+            <!-- Menu mobile  -->
+            <input type="checkbox" id="checkbox-menu">
+            <label class="menu" for="checkbox-menu">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #274e2e;"></i>
+            </label>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
@@ -56,49 +63,60 @@
     </main>
 
 
-
-
-    <!-- *******************  footer ************************* -->
-
-    <footer class="footer_mine">
+    <!-- *******************  FOOTER ************************* -->
+    <footer class="container-fluid footer_mine2">
         <!-- Redes sociales -->
-        <div class="social">
-            <p > Siguenos </p>
-            <!--YOUTUBE -->
-            <a  href="https://www.youtube.com/@PizarronVerde" target="_blank">
-                <i class="fa-brands fa-youtube fa-2xl" style="color: #274e2a;"></i>
-            </a>
-            <!-- INSTAGRAM -->
-            <a  href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
-                <i class="fa-brands fa-instagram fa-2xl" style="color: #274e2e;"></i>
-            </a>
-            <!-- TIKTOK -->
-            <a  href="https://www.tiktok.com/@pizarronverde" target="_blank">
-                <i class="fa-brands fa-tiktok fa-2xl" style="color: #274e2e;"></i>
-            </a>
+        <div class="row social">
+            <div class="col-lg-6 col-md-8 col-sm-12 social">
+                <p class="icon_redes"> Siguenos </p>
+                <!--YOUTUBE -->
+                <a href="https://www.youtube.com/@PizarronVerde" target="_blank">
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #274e2a;"></i>
+                </a>
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/pizarronverde/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #274e2e;"></i>
+                </a>
+                <!-- TIKTOK -->
+                <a href="https://www.tiktok.com/@pizarronverde" target="_blank">
+                    <i class="fa-brands fa-tiktok fa-2xl" style="color: #274e2e;"></i>
+                </a>
+            </div>
+
+            <div class=" col-lg-6 col-md-8 col-sm-12 ">
+                <div class="row g-3  justify-content-center">
+                    <div class="col-auto">
+                        <label for="newsletter">Suscribete al Newsletter:</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="newsletter" class="form-control" name="" id="newsletter" placeholder="Email">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-success boton_enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="suscribete-al-newsletter">
-            <label for="newsletter">Suscribete al Newsletter:</label>
-            <input type="newsletter" name="" id="newsletter" placeholder="Email">
-        </div>
-
-        <nav class="menu2">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/temas.html">Temas</a></li>
-                <li><a href="../pages/juegos.html">Juegos</a></li>
-                <li><a href="../pages/donaciones.html">Donaciones</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="row menu2">
+            <div class="col">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/temas.html">Temas</a></li>
+                    <li><a href="../pages/juegos.html">Juegos</a></li>
+                    <li><a href="../pages/donaciones.html">Donaciones</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        
-        <div class="author">
-            <p>pizarronverde © 2023.</p>
-            <p>Autor: Tamara E. Faya</p>
-        </div>
-        
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-5 col-md-3 offset-md-6 col-sm-12  author">
+                <p>pizarronverde © 2023.</p> 
+                <p>Autor: Tamara E. Faya</p> 
+            </div>
+          </div>
     </footer>
 
 </body>

@@ -29,11 +29,14 @@ body {
 .cabecera {
     display: grid;
     grid-template-columns: 150px 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu_ppal";
     border-bottom: solid 1px rgba(0, 0, 0, 0.233);
     align-items: center;
 }
 
 .cabecera img {
+    grid-area: logo;
     margin-top: 5px;
     margin-left: 15px;
     width: 100%;
@@ -42,10 +45,10 @@ body {
 
 /*****  CONTENEDOR DEL MENU *****/
 nav.menu_ppal ul {
+    grid-area: menu_ppal;
     display: flex;
     justify-content: flex-end;
-    list-style: none;
-    
+    list-style: none; 
 }
 
 /***** ELEMENTOS DE LA LISTA DEL MENU *******/
@@ -223,12 +226,7 @@ section.beneficios .bloque img {
 }
 
 /* ************ CONTACTO ********************** */
-.contacto_file{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
 
-}
 h3 {
     font-family: var(--font-family-texto);
     font-size: var(--font-size-texto-titulosecundario);
@@ -240,7 +238,7 @@ h3 {
     border-radius: 5px;
     background-color:var(--color-contraste);
     padding: 20px;
-    
+   
   }
   input[type=text], input[type=email], textarea {
     width: 100%; 
@@ -331,4 +329,52 @@ nav.menu2 ul {
     padding-top: 10px;
     margin-top: 20px;
     grid-area: author; 
+}
+
+
+/* ******** MEDIA QUERIES ******** */
+@media screen and (max-width: 600px) {
+
+    .cabecera {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-direction: flex-start;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+        margin: 0px;
+        padding: 0px;
+    }
+    .cabecera img{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    /*****  CONTENEDOR DEL MENU *****/
+    nav.menu_ppal {
+        margin: 10px;
+    }
+
+    nav.menu_ppal ul {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none; 
+        position: absolute;
+        background-color: white;
+        border: 1px solid var(--color-principal);
+        border-radius: 2px ;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* check menu */
+    label.menu {
+        display: block;
+        justify-content: left;
+        margin: 10px;
+    }
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+    
 }
