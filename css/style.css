@@ -376,5 +376,18 @@ nav.menu2 ul {
     #checkbox-menu:checked ~ ul{
         display: block;
     }
-    
+    .baner {
+        width: 95%;
+    }
+    section.beneficios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .propaganda{
+        margin: 5px;
+        column-gap: 10px;
+        overflow: scroll;
+        width: 95%;
+    }
 }
