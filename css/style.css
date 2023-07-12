@@ -49,6 +49,7 @@ nav.menu_ppal ul {
     display: flex;
     justify-content: flex-end;
     list-style: none; 
+    margin: 0px;
 }
 
 /***** ELEMENTOS DE LA LISTA DEL MENU *******/
@@ -68,7 +69,7 @@ nav.menu_ppal ul {
 }
 
 /* check menu */
-#checkbox-menu, label.menu {
+#checkbox-menu, label.menu, .liston, .titulo_mobile, .boton_mobile {
     display: none;
 }
 
@@ -333,7 +334,7 @@ nav.menu2 ul {
 
 
 /* ******** MEDIA QUERIES ******** */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
     .cabecera {
         display: flex;
@@ -347,12 +348,16 @@ nav.menu2 ul {
         margin: 0px;
         display: flex;
         justify-content: center;
+        align-items: center;
         max-width: 100%;
+        border-radius: 0px;
     }
 
     /*****  CONTENEDOR DEL MENU *****/
     nav.menu_ppal {
         margin: 10px;
+        display: flex;
+        justify-content: space-between;
     }
 
     nav.menu_ppal ul {
@@ -369,9 +374,19 @@ nav.menu2 ul {
     }
     /* check menu */
     label.menu {
-        display: block;
+        display: flex;
         justify-content: left;
-        margin: 10px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .boton_mobile{
+        display: flex;   
+    }
+
+    .titulo_mobile{
+        display: flex;
+        margin: 0px;
     }
     #checkbox-menu:checked ~ ul{
         display: block;
