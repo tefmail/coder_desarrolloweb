@@ -1,0 +1,12 @@
+{
+  "name": "coder_pizarronverde",
+  "version": "1.0.0",
+  "description": "curso de desarrollo web de coder house 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

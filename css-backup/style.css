@@ -1,0 +1,408 @@
+/* reset navegador  o selector universal*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos generales */
+:root {
+    --color-principal: #274e2e;
+    --color-secundario: #dfedd6;
+    --color-contraste: #fefce0;
+    --font-family-texto: "Source Sans 3", sans-serif;
+    --font-size-texto-titulo: 34px;
+    --font-size-texto-titulosecundario: 28px;
+    --font-size-texto-secundario: 14px;
+ 
+}
+
+/*************** BODY ********************/
+body {
+    background-color: var(--color-secundario);
+    font-family: var(--font-family-texto);
+    color: var(--color-principal);
+}
+
+/* ******************* CABECERA ********************************/
+
+.cabecera {
+    display: grid;
+    grid-template-columns: 150px 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu_ppal";
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+    align-items: center;
+}
+
+.cabecera img {
+    grid-area: logo;
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*****  CONTENEDOR DEL MENU *****/
+nav.menu_ppal ul {
+    grid-area: menu_ppal;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+    margin: 0px;
+}
+
+/***** ELEMENTOS DE LA LISTA DEL MENU *******/
+.menu_ppal ul li {
+    /*display: inline-block;*/
+    padding: 10px;    
+}
+.menu_ppal ul li:hover {
+    background-color: var(--color-contraste);
+    border-radius: 15px;
+}
+
+.menu_ppal ul li a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+/* check menu */
+#checkbox-menu, label.menu, .liston, .titulo_mobile, .boton_mobile {
+    display: none;
+}
+
+
+/* ******** SECCION BANER ******** */
+.baner {
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+}
+
+.izquierda {
+    /*width: 50%;*/
+    display: inline-block;
+    font-size: var(--font-size-texto-secundario);
+}
+
+h1 {
+    font-family: var(--font-family-texto);
+    font-size: var(--font-size-texto-titulo);
+    font-weight: bold;
+}
+
+.botonexplorar {
+    height: 35px;
+    width: 120px;
+    border: none;
+    background-color: var(--color-principal);
+    border-radius: 15px;
+    margin-top: 20px;
+    background-image: url(../media/icono_lupa.png);
+    background-position: 10%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+.izquierda input::placeholder {
+    color: var(--color-contraste);
+    padding-left: 45px;
+}
+
+.derecha {
+    height: 350px;
+    /*width: 50%;*/
+    display: flex;
+    align-items: center;
+}
+
+.derecha img {
+    max-height: 80%;
+    max-width: 90%;
+}
+
+/* ****** SECCION BENEFICIOS ******** */
+section.beneficios {
+    padding: 15px;
+    background-color: var(--color-contraste);
+    min-height: 320px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20x;
+    justify-items: center;
+    align-items: center;
+}
+
+section.beneficios .bloque {
+    display: flex;
+    justify-self: space-evenly;
+}
+
+.bullet {
+    font-size: var(--font-size-texto-titulosecundario);
+    font-weight: bold;
+    padding-left: 20px;
+    max-width: 300px;
+}
+
+.destacado {
+    font-size: var(--font-size-texto-secundario);
+    font-weight: 400;
+    max-width: 800px;
+}
+
+section.beneficios .bloque img {
+    height: 50px;
+}
+
+/* ************ PROPAGANDA ********************** */
+.propaganda {
+    margin-left: 100px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.item_propaganda {
+    justify-self: left;
+}
+
+.propaganda img.item_propaganda {
+    max-height: 90%;
+    max-width: 100%;
+    justify-self: right;
+}
+
+/* ************ COMENTARIOS ********************** */
+.likes, .donaciones, .contacto, footer {
+    padding: 40px 10px;
+    text-align: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+}
+
+.likes p {
+    max-width: 800px;
+    display: inline-block;
+}
+
+.likes ul,
+.donaciones ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.likes ul li img {
+    max-width: 300px;
+}
+
+/* ************ DONACIONES ********************** */
+.donaciones {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donaciones ul li {
+    display: inline-block;
+    border: solid 1px black;
+    width: 250px;
+    height: 400px;
+    margin: 15px;
+
+}
+
+/* ************ CONTACTO ********************** */
+
+h3 {
+    font-family: var(--font-family-texto);
+    font-size: var(--font-size-texto-titulosecundario);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.form_contenedor {
+   /* margin: 0px;*/
+    border-radius: 5px;
+    background-color:var(--color-contraste);
+    padding: 20px;
+   
+  }
+  input[type=text], input[type=email], textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*margin-top: 6px; /* Add a top margin */
+   /* margin-bottom: 16px; /* Bottom margin */
+    resize: vertical
+  }
+.boton_enviar{
+    background-color: var(--color-principal);
+    color: var(--color-contraste);
+    border: none;
+    /*padding: 5px;
+    border-radius: 5px;*/
+}
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+
+/* ************ footer ********************** */
+.footer_mine2{
+    margin-top: 20px;
+    background-color: white;
+}
+.footer_mine {
+    background-color: white;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;*/
+    row-gap: 20px;
+    grid-template-areas:
+        "social social social newsletter newsletter newsletter"
+        "menu2 menu2 menu2 menu2 menu2 menu2"
+        ". . author author . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+/*****  CONTENEDOR DEL MENU *****/
+.menu2 {
+    padding-top: 20px;
+    grid-area: menu2;
+    margin: 0px;
+    /*display: flex;
+    align-items: center;*/
+}
+nav.menu2 ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu2 ul li {
+    /*display: inline-block;*/
+    margin-top: 10px;
+    padding-inline: 10px;
+    border-inline: 2px solid var(--color-secundario);
+    border-inline-start: none;
+    
+}
+.menu2 ul li a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+.fa-brands {
+    padding-left: 10px;
+}
+.social {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+}
+
+.suscribete-al-newsletter {
+    grid-area: newsletter;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.author {
+    border-top: var(--color-secundario) solid 2px;
+    padding-top: 10px;
+    margin-top: 20px;
+    grid-area: author; 
+}
+
+
+/* ******** MEDIA QUERIES ******** */
+@media screen and (max-width: 650px) {
+
+    .cabecera {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-direction: flex-start;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.233);
+        margin: 0px;
+        padding: 0px;
+    }
+    .cabecera img{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    /*****  CONTENEDOR DEL MENU *****/
+    nav.menu_ppal {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav.menu_ppal ul {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none; 
+        position: absolute;
+        background-color: white;
+        border: 1px solid var(--color-principal);
+        border-radius: 2px ;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* check menu */
+    label.menu {
+        display: flex;
+        justify-content: left;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .boton_mobile{
+        display: flex;   
+    }
+
+    .titulo_mobile{
+        display: flex;
+        margin: 0px;
+    }
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+    .baner {
+        width: 95%;
+    }
+    section.beneficios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .propaganda{
+        margin: 5px;
+        column-gap: 10px;
+        overflow: scroll;
+        width: 95%;
+    }
+}
