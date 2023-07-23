@@ -96,7 +96,6 @@ nav ul li:hover {
 }
 .baner .derecha {
   height: 350px;
-  /*width: 50%;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,6 +106,7 @@ nav ul li:hover {
 }
 
 h1 {
+  padding: 15px 15px 0px 15px;
   font-family: var(--font-family-texto);
   font-size: var(--font-size-texto-titulo);
   font-weight: bold;
@@ -184,17 +184,17 @@ section.propaganda img.item_propaganda {
 }
 
 /* ************ COMENTARIOS ********************** */
-.likes, .donaciones, .contacto, footer {
+section.likes, .donaciones, .contacto, footer {
   padding: 40px 10px;
   text-align: center;
   border-bottom: solid 1px rgba(0, 0, 0, 0.233);
   margin-top: auto;
 }
-.likes p, .donaciones p, .contacto p, footer p {
+section.likes p, .donaciones p, .contacto p, footer p {
   max-width: 800px;
   display: inline-block;
 }
-.likes ul, .donaciones ul, .contacto ul, footer ul {
+section.likes ul, .donaciones ul, .contacto ul, footer ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -202,7 +202,7 @@ section.propaganda img.item_propaganda {
   justify-content: center;
   padding: 0;
 }
-.likes ul li img, .donaciones ul li img, .contacto ul li img, footer ul li img {
+section.likes ul li img, .donaciones ul li img, .contacto ul li img, footer ul li img {
   max-width: 300px;
   padding: 5px 0px;
 }
@@ -213,6 +213,16 @@ section.donaciones {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section.donaciones-page {
+  background-color: var(--color-secundario);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
 }
 
 /* ************ CONTACTO ********************** */
@@ -279,6 +289,7 @@ input[type=submit]:hover {
 /* ******** MEDIA QUERIES ******** */
 @media screen and (max-width: 650px) {
   .cabecera {
+    background-color: #a4c48d;
     display: flex;
     flex-direction: column-reverse;
     flex-direction: flex-start;
@@ -326,12 +337,22 @@ input[type=submit]:hover {
   }
   .boton_mobile {
     display: flex;
+    justify-content: flex-end;
+    border: solid 1px var(--color-principal);
+    border-radius: 5px;
+  }
+  .boton_explorar {
+    background-color: #a4c48d;
+    color: var(--color-contraste);
   }
   .titulo_mobile {
     display: flex;
     margin: 0px;
+    padding-left: 15px;
     line-height: 1.3;
     font-size: var(--font-size-texto-titulosecundario);
+    font-weight: 100;
+    color: var(--color-contraste);
   }
   section.propaganda {
     margin: auto;
