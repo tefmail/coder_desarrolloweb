@@ -181,6 +181,7 @@ section.propaganda img.item_propaganda {
   max-height: 90%;
   max-width: 100%;
   justify-self: right;
+  border-radius: 25px;
 }
 
 /* ************ COMENTARIOS ********************** */
@@ -204,7 +205,8 @@ section.likes ul, .donaciones ul, .contacto ul, footer ul {
 }
 section.likes ul li img, .donaciones ul li img, .contacto ul li img, footer ul li img {
   max-width: 300px;
-  padding: 5px 0px;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 /* ************ DONACIONES ********************** */

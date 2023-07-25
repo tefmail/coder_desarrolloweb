@@ -177,6 +177,7 @@ section.propaganda {
         max-height: 90%;
         max-width: 100%;
         justify-self: right;
+        border-radius: 25px;
     }
 }
 /* ************ COMENTARIOS ********************** */
@@ -198,7 +199,8 @@ section.likes, .donaciones, .contacto, footer {
         padding: 0;
         li img {
             max-width: 300px;
-            padding: 5px 0px ;
+            padding: 5px;
+            border-radius: 25px;
         }
     }
 }
